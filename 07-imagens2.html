@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        /*Regras iniciadas com # se aplicam ao elemento com o ID de mesmo nome*/
+        #logo {
+            width: 100%; /*A imagem ocupará 100% da largura disponívem */
+            max-width: 360px; /*Largura máxima em pixels */
+            min-width: 100px; /*Largura mínima em pixels */
+        }
+        figcaption {
+            font-family: "calibri", "Arial", sans; /*tipo de letras*/ 
+            font-style: italic; /*itálico*/
+        }
+        figure {
+            text-align: center; /*centralizado*/
+            background-image: url('img/light-carbonfiber.png') 
+        }    
+
+        body {
+            /* Imagem de fundo da página
+            Por padrão, a imagem se repete automáticamente para cobrir todo o fundo*/
+            background-image: url('img/metal.jpg') 
+            /*background-image: no-repeat; /*"no-repeat" = não repete a imagem de fundo*/
+            
+        }          
+    </style>
+</head>
+<body>
+    <!--Atributo de imagem TAG <img>
+        src (source) = O caminho para o arquivo de imagem que será exibido
+        alt (texto alternativo) = Um texto que será exibido no lugar da imagem
+        caso o respectivo arquivo não seja encontrado-->
+    <!--ID="logo" especifica um ID da imagem, e não pode repetir-->    
+    <img id="logo" src="img/apptiva-logo.png" alt="Logotipo da empresa Apptiva">
+    <img src="img/distance-education-1000px.jpg" alt="Educação a distância" title="Venha estudar conosco"> <!--"Title" faz a mensagem aparecer quando passamos o mause em cima dela-->
+
+    <figure>
+        <img src="img/distance-education-1000px.jpg" alt="Educação a distância" title="Venha estudar conosco">
+        <!--A TAG <figure> faz aparecere uma Legenda da Imgem (semãntica). Pode vir depois ou antes do <img>-->
+        <figcaption>A Appitiva oferece as melhores tecnologias para educação a distância. Faça como esa nossa aluna.</figcaption>
+    </figure>
+
+    <img style="width: 50%; border: 1px solid blue" src="img/svg-logo.svg" alt="Logotipo do formato SVG"> 
+
+
+
+</body>
+</html>
