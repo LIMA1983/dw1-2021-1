@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens</title>
+    /* tag <link>para colocar o icone na aba das páginas abertas no navegador - Precisa converter o icone para um arquivo com extensão "ico" https://favicon.io/favicon-converter */
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"
     <style>
         /*Regras iniciadas com # se aplicam ao elemento com o ID de mesmo nome*/
         #logo {
@@ -46,7 +48,31 @@
 
     <img style="width: 50%; border: 1px solid blue" src="img/svg-logo.svg" alt="Logotipo do formato SVG"> 
 
+    <!--
+        A tag <img> pertence ao grupo dos ELEMENTOS DE LINHA, ou seja, vários <img> em sequência, havendo largura suficiente, serão exibidos na mesma linha.
 
+    -->
+<br>
+    <img src="img/apptiva-icon.png" alt="Ícone do Appitiva">
 
+    <img src="img/apptiva-icon.png" alt="Ícone do Appitiva">
+
+    <!--
+        Já a tag <div> (divisão) peretence ao grupo dos ELEMENTOS DE BLOCO. Cada elemento desse grupo ocupará por padrão toda a largura disponível.
+    -->
+
+    <div style="background: yellow;">
+    <img src="img/apptiva-icon.png" alt="Ícone do Appitiva">
+    </div>
+
+    <!--
+        Via CSS é possível fazer um elemento de linha se comportar como um elemento de bloco = cair para a linha debaixo.
+    -->
+
+     <img style="display: block" src="img/apptiva-icon.png" alt="Ícone do Appitiva">
+
+    <img src="img/apptiva-icon.png" alt="Ícone do Appitiva">
+
+    <img src="img/apptiva-icon.png" alt="Ícone do Appitiva">
 </body>
 </html>
