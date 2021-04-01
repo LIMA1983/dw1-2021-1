@@ -1,0 +1,36 @@
+div.container {
+    background-color:darkgray;
+    font-family: calibri, Arial, Helvetica, sans-serif;
+    padding: 20px; /*Espaço interno*/
+    border-left: 7px dotted black; /*somente a borda esquerda*/
+    border-right: 7px dashed blue; /*somente a borda direita*/
+}
+
+/* divs internas */
+div.container div {
+    border: 1px solid red;
+    padding: 12px; /*Margem dos textos dentro das caixas*/
+    margin: 16px; /*Espaçamento entre os textos*/
+    margin-bottom: 16px; /*Apenas a margem inferior*/
+}
+
+#box1 {
+    background-color: goldenrod;
+    /*Dois valores: o primeiro para top e bottom e o segundo para left e right*/
+    padding: 40px 30px;
+}
+
+#box2 {
+    background-color: aquamarine;
+   /* padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+    padding-right: 8px;*/
+    padding: 30px 8px 25px 8px; /*Ao invés de declarar todas as TAG´s acima podemos fazer em uma única linha - Ordem começa no left e vai sentido horário*/
+
+}
+
+#box3 {
+    background-color: yellowgreen;
+    margin-bottom: 0; /*Reduzido a margem inferior somente do box3*/
+}
