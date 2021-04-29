@@ -1,0 +1,15 @@
+/* CSS reset = zera tudo - encosta nas margens 0 = "*" pega tudo */
+*{ /*Todos os elementos */
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #550000;
+    padding: 10px 20px;
+}
+
+nav ul li { /* Todas as Regras abaixo funcionarão somente para NAV que tem UL e dentro o LI*/
+    display: inline-block; /* Deixar o Menu de forma horizontal*/
+    margin: 10px; /* Espaçamento do Menu´s*/
+}
